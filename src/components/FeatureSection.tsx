@@ -4,7 +4,7 @@ const FeatureSection: React.FC = () => {
   return (
     <section style={styles.section}>
       <div style={styles.flowerContainer}>
-        <img src="/Assets/Flower.svg" alt="flower" style={styles.flower} />
+        <img src="./Assets/Flower.svg" alt="flower" style={styles.flower} />
       </div>
       
       <div style={styles.textContainer}>
@@ -18,9 +18,9 @@ const FeatureSection: React.FC = () => {
       </div>
 
       <div style={styles.interactiveArea}>
-        <img src="/Assets/yellowfom.svg" alt="decoration" className="feature-decoration" style={styles.bgDecorationLeft} />
-        <img src="/Assets/Frame%201321315507.gif" alt="Game" className="feature-board-gif" style={styles.boardGif} />
-        <img src="/Assets/brakets.svg" alt="decoration" className="feature-decoration" style={styles.bgDecorationRight} />
+        <img src="./Assets/yellowfom.svg" alt="decoration" className="feature-decoration" style={styles.bgDecorationLeft} />
+        <img src="./Assets/Frame%201321315507.gif" alt="Game" className="feature-board-gif" style={styles.boardGif} />
+        <img src="./Assets/brakets.svg" alt="decoration" className="feature-decoration" style={styles.bgDecorationRight} />
       </div>
     </section>
   );

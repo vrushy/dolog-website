@@ -24,7 +24,7 @@ const Header: React.FC = () => {
   const headerContent = (
     <div style={styles.headerInner}>
       <div style={styles.logoContainer}>
-        <img src="/Assets/LOGO.svg" alt="DOLOG" style={styles.logo} />
+        <img src="./Assets/LOGO.svg" alt="DOLOG" style={styles.logo} />
       </div>
       <nav className="desktop-only" style={styles.nav}>
         <a href="#about" style={styles.link}>About us</a>

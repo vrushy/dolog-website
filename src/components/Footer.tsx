@@ -8,22 +8,22 @@ const Footer: React.FC = () => {
       <div style={styles.topSection}>
         <div style={styles.socialGrid}>
           <div className="brutal-card" style={styles.socialIcon}>
-            <img src="/Assets/dis.svg" alt="Discord" style={styles.iconImage} />
+            <img src="./Assets/dis.svg" alt="Discord" style={styles.iconImage} />
           </div>
           <div className="brutal-card" style={styles.socialIcon}>
-            <img src="/Assets/prime_twitter.svg" alt="X" style={styles.iconImage} />
+            <img src="./Assets/prime_twitter.svg" alt="X" style={styles.iconImage} />
           </div>
           <div className="brutal-card" style={styles.socialIcon}>
-            <img src="/Assets/inst.svg" alt="Instagram" style={styles.iconImage} />
+            <img src="./Assets/inst.svg" alt="Instagram" style={styles.iconImage} />
           </div>
           <div className="brutal-card" style={styles.socialIcon}>
-            <img src="/Assets/link.svg" alt="LinkedIn" style={styles.iconImage} />
+            <img src="./Assets/link.svg" alt="LinkedIn" style={styles.iconImage} />
           </div>
         </div>
 
         <div className="brutal-card footer-banner" style={styles.banner}>
           <div className="footer-banner-content" style={styles.bannerContent}>
-            <img src="/Assets/image%20258.png" alt="Conversations" style={styles.bannerImage} />
+            <img src="./Assets/image%20258.png" alt="Conversations" style={styles.bannerImage} />
             <div style={styles.bannerText}>
               <h3 style={styles.bannerHeading}>
                 THOUSANDS OF<br/>CONVERSATIONS<br/>
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
       <div style={styles.bottomSection}>
         <div className="footer-bottom-inner" style={styles.bottomInner}>
           <div style={styles.logoContainerFooter}>
-            <img src="/Assets/logo%20animation%20.gif" alt="DOLOG Animation" style={styles.logo} />
+            <img src="./Assets/logo%20animation%20.gif" alt="DOLOG Animation" style={styles.logo} />
           </div>
           
           <div style={styles.middleTextContainer}>

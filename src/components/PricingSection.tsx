@@ -11,18 +11,18 @@ const PricingSection: React.FC = () => {
         {/* FREE PLAN */}
         <div style={styles.planContainer}>
           <div style={styles.planHeader}>
-            <img src="/Assets/Freeicon.svg" alt="Free" style={styles.planIcon} />
+            <img src="./Assets/Freeicon.svg" alt="Free" style={styles.planIcon} />
             <h3 style={styles.planTitle}>FREE</h3>
           </div>
           
           <div className="brutal-card" style={{ ...styles.card, backgroundColor: '#D9F1D9' }}>
             <h4 style={styles.cardTitle}>Start Meeting People</h4>
             <ul style={styles.featureList}>
-              <li style={styles.featureItem}><img src="/Assets/1.svg" alt="check" style={styles.checkIcon} /> 1 Connect per week in public app</li>
-              <li style={styles.featureItem}><img src="/Assets/1.svg" alt="check" style={styles.checkIcon} /> Join unlimited public gameplay support</li>
-              <li style={styles.featureItem}><img src="/Assets/1.svg" alt="check" style={styles.checkIcon} /> 1 min voice</li>
-              <li style={styles.featureItem}><img src="/Assets/1.svg" alt="check" style={styles.checkIcon} /> 30 min video access</li>
-              <li style={styles.featureItem}><img src="/Assets/1.svg" alt="check" style={styles.checkIcon} /> Closed beta access</li>
+              <li style={styles.featureItem}><img src="./Assets/1.svg" alt="check" style={styles.checkIcon} /> 1 Connect per week in public app</li>
+              <li style={styles.featureItem}><img src="./Assets/1.svg" alt="check" style={styles.checkIcon} /> Join unlimited public gameplay support</li>
+              <li style={styles.featureItem}><img src="./Assets/1.svg" alt="check" style={styles.checkIcon} /> 1 min voice</li>
+              <li style={styles.featureItem}><img src="./Assets/1.svg" alt="check" style={styles.checkIcon} /> 30 min video access</li>
+              <li style={styles.featureItem}><img src="./Assets/1.svg" alt="check" style={styles.checkIcon} /> Closed beta access</li>
             </ul>
             <MagneticButton style={styles.actionButton}>START FREE NOW</MagneticButton>
           </div>
@@ -31,18 +31,18 @@ const PricingSection: React.FC = () => {
         {/* PAID PLAN */}
         <div style={styles.planContainer}>
           <div style={styles.planHeader}>
-            <img src="/Assets/paidicon.svg" alt="Paid" style={styles.planIcon} />
+            <img src="./Assets/paidicon.svg" alt="Paid" style={styles.planIcon} />
             <h3 style={styles.planTitle}>PAID</h3>
           </div>
           
           <div className="brutal-card" style={{ ...styles.card, backgroundColor: '#F9F3E5' }}>
             <h4 style={styles.cardTitle}>Unlock the Full Experience</h4>
             <ul style={styles.featureList}>
-              <li style={styles.featureItem}><img src="/Assets/2.svg" alt="check" style={styles.checkIcon} /> Unlimited public game features</li>
-              <li style={styles.featureItem}><img src="/Assets/2.svg" alt="check" style={styles.checkIcon} /> Ad free experience</li>
-              <li style={styles.featureItem}><img src="/Assets/2.svg" alt="check" style={styles.checkIcon} /> Unlimited Voice</li>
-              <li style={styles.featureItem}><img src="/Assets/2.svg" alt="check" style={styles.checkIcon} /> Extend sessions up to 60 minutes</li>
-              <li style={styles.featureItem}><img src="/Assets/2.svg" alt="check" style={styles.checkIcon} /> Closed beta access with priority</li>
+              <li style={styles.featureItem}><img src="./Assets/2.svg" alt="check" style={styles.checkIcon} /> Unlimited public game features</li>
+              <li style={styles.featureItem}><img src="./Assets/2.svg" alt="check" style={styles.checkIcon} /> Ad free experience</li>
+              <li style={styles.featureItem}><img src="./Assets/2.svg" alt="check" style={styles.checkIcon} /> Unlimited Voice</li>
+              <li style={styles.featureItem}><img src="./Assets/2.svg" alt="check" style={styles.checkIcon} /> Extend sessions up to 60 minutes</li>
+              <li style={styles.featureItem}><img src="./Assets/2.svg" alt="check" style={styles.checkIcon} /> Closed beta access with priority</li>
             </ul>
             <MagneticButton className="green" style={styles.actionButton}>₹10 WEEKLY</MagneticButton>
           </div>

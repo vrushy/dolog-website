@@ -13,7 +13,7 @@ const LocationCTA: React.FC = () => {
       <div className="brutal-card" style={styles.card}>
         <div style={styles.cardInner}>
           <div style={styles.iconContainer}>
-            <img src="/Assets/Okicon.svg" alt="icon" style={styles.icon} />
+            <img src="./Assets/Okicon.svg" alt="icon" style={styles.icon} />
           </div>
           
           <h2 style={styles.heading}>
@@ -25,7 +25,7 @@ const LocationCTA: React.FC = () => {
 
         <div style={styles.selector}>
           <button style={styles.arrowButton} onClick={handlePrev}>
-            <img src="/Assets/arrow%20left.svg" alt="Previous" style={styles.arrowIcon} />
+            <img src="./Assets/arrow%20left.svg" alt="Previous" style={styles.arrowIcon} />
           </button>
           
           <div style={styles.locationsWrapper}>
@@ -51,7 +51,7 @@ const LocationCTA: React.FC = () => {
           </div>
 
           <button style={styles.arrowButton} onClick={handleNext}>
-            <img src="/Assets/arrow%20right.svg" alt="Next" style={styles.arrowIcon} />
+            <img src="./Assets/arrow%20right.svg" alt="Next" style={styles.arrowIcon} />
           </button>
         </div>
 

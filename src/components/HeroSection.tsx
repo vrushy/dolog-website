@@ -23,10 +23,10 @@ const HeroSection: React.FC = () => {
         </h1>
         
         <div style={styles.mainImageContainer}>
-           <img src="/Assets/Mainimage.svg" alt="Main" style={styles.mainImage} />
-           <img src="/Assets/Slimlig.svg" alt="Smiling Face" style={styles.smileyDecoration} />
-           <img src="/Assets/Star.svg" alt="Pink Star" style={styles.starDecoration} />
-           <img src="/Assets/Blackstar.svg" alt="Black Star" style={styles.blackStarDecoration} />
+           <img src="./Assets/Mainimage.svg" alt="Main" style={styles.mainImage} />
+           <img src="./Assets/Slimlig.svg" alt="Smiling Face" style={styles.smileyDecoration} />
+           <img src="./Assets/Star.svg" alt="Pink Star" style={styles.starDecoration} />
+           <img src="./Assets/Blackstar.svg" alt="Black Star" style={styles.blackStarDecoration} />
         </div>
       </div>
     </section>
