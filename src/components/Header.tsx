@@ -44,10 +44,9 @@ const Header: React.FC = () => {
         >
           <a href="#about" style={styles.link}>About us</a>
           {isAboutHovered && (
-            <div style={{
-              ...styles.captionBox,
-              left: `${cursorPos.x + 24}px`,
-              top: `${cursorPos.y + 24}px`,
+            <div className="comic-bubble" style={{
+              left: `${cursorPos.x + 4}px`,
+              top: `${cursorPos.y + 30}px`,
             }}>
               <p style={styles.captionText}>
                 DOLOG was built for one purpose: enjoyment. Not networking, not matching, not swiping — just people, coming together in a room, playing something, and enjoying the conversation that follows.
@@ -153,19 +152,6 @@ const styles = {
   },
   navItemContainer: {
     position: 'relative' as const,
-  },
-  captionBox: {
-    position: 'fixed' as const,
-    width: '380px',
-    padding: '24px',
-    zIndex: 1100,
-    backgroundColor: '#fff',
-    border: '3px solid var(--black)',
-    borderRadius: '16px',
-    borderBottomLeftRadius: '0px',
-    boxShadow: '6px 6px 0px var(--black)',
-    cursor: 'default',
-    pointerEvents: 'none' as const,
   },
   captionText: {
     fontFamily: 'var(--font-body)',
