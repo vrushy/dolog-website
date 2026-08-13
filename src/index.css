@@ -189,6 +189,11 @@ button {
   text-decoration: underline !important;
 }
 
+.header-link:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
+}
+
 .comic-bubble {
   position: fixed;
   width: 380px;

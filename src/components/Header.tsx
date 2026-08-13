@@ -42,10 +42,10 @@ const Header: React.FC = () => {
           onMouseLeave={() => setIsAboutHovered(false)}
           onMouseMove={handleMouseMove}
         >
-          <a href="#about" style={styles.link}>About us</a>
+          <a href="#about" className="header-link" style={styles.link}>About us</a>
         </div>
-        <a href="#privacy" style={styles.link}>Privacy policy</a>
-        <a href="#contact" style={styles.link}>Contact Us</a>
+        <a href="#privacy" className="header-link" style={styles.link}>Privacy policy</a>
+        <a href="#contact" className="header-link" style={styles.link}>Contact Us</a>
       </nav>
       <div className="desktop-only">
         <MagneticButton style={styles.playButton}>PLAY IN BROWSER</MagneticButton>
@@ -77,9 +77,9 @@ const Header: React.FC = () => {
         pointerEvents: isMobileMenuOpen ? 'auto' : 'none',
       }}>
         <div style={styles.mobileMenuContent}>
-           <a href="#about" style={styles.mobileLink} onClick={toggleMobileMenu}>About us</a>
-           <a href="#privacy" style={styles.mobileLink} onClick={toggleMobileMenu}>Privacy policy</a>
-           <a href="#contact" style={styles.mobileLink} onClick={toggleMobileMenu}>Contact Us</a>
+           <a href="#about" className="header-link" style={styles.mobileLink} onClick={toggleMobileMenu}>About us</a>
+           <a href="#privacy" className="header-link" style={styles.mobileLink} onClick={toggleMobileMenu}>Privacy policy</a>
+           <a href="#contact" className="header-link" style={styles.mobileLink} onClick={toggleMobileMenu}>Contact Us</a>
            <MagneticButton style={{...styles.playButton, width: '100%', marginTop: '24px'}} onClick={toggleMobileMenu}>PLAY IN BROWSER</MagneticButton>
         </div>
       </div>
