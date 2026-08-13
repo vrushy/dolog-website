@@ -45,20 +45,11 @@ const Header: React.FC = () => {
           <a href="#about" style={styles.link}>About us</a>
           {isAboutHovered && (
             <div className="comic-bubble" style={{
-              left: `${cursorPos.x + 4}px`,
-              top: `${cursorPos.y + 30}px`,
+              left: `${cursorPos.x - 36}px`,
+              top: `${cursorPos.y + 17}px`,
             }}>
-              <p style={styles.captionText}>
-                DOLOG was built for one purpose: enjoyment. Not networking, not matching, not swiping — just people, coming together in a room, playing something, and enjoying the conversation that follows.
-              </p>
-              <p style={styles.captionText}>
-                We wanted to build a safe space where connection actually has a purpose. Every room on DOLOG starts with a game, because a game gives people a reason to talk that doesn't feel forced. You're not trying to impress anyone. You're just trying to win — and somewhere between your first move and your last, a real conversation happens on its own.
-              </p>
-              <p style={styles.captionText}>
-                That's the thing about a room full of strangers: you never really know who's in it. Could be someone across the city. Could be someone from your own college. Could be the neighbor you've walked past a hundred times and never once said hello to.
-              </p>
               <p style={{ ...styles.captionText, marginBottom: 0 }}>
-                DOLOG is that room. Come play, come talk, come find out.
+                DOLOG was built for one purpose: enjoyment. Not networking, not matching, not swiping — just people, coming together in a room, playing something, and enjoying the conversation that follows.
               </p>
             </div>
           )}
