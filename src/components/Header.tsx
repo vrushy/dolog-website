@@ -43,16 +43,6 @@ const Header: React.FC = () => {
           onMouseMove={handleMouseMove}
         >
           <a href="#about" style={styles.link}>About us</a>
-          {isAboutHovered && (
-            <div className="comic-bubble" style={{
-              left: `${cursorPos.x - 36}px`,
-              top: `${cursorPos.y + 17}px`,
-            }}>
-              <p style={{ ...styles.captionText, marginBottom: 0 }}>
-                DOLOG was built for one purpose: enjoyment. Not networking, not matching, not swiping — just people, coming together in a room, playing something, and enjoying the conversation that follows.
-              </p>
-            </div>
-          )}
         </div>
         <a href="#privacy" style={styles.link}>Privacy policy</a>
         <a href="#contact" style={styles.link}>Contact Us</a>
@@ -93,6 +83,17 @@ const Header: React.FC = () => {
            <MagneticButton style={{...styles.playButton, width: '100%', marginTop: '24px'}} onClick={toggleMobileMenu}>PLAY IN BROWSER</MagneticButton>
         </div>
       </div>
+
+      {isAboutHovered && (
+        <div className="comic-bubble" style={{
+          left: `${cursorPos.x + 15}px`,
+          top: `${cursorPos.y + 25}px`,
+        }}>
+          <p style={{ ...styles.captionText, marginBottom: 0 }}>
+            DOLOG was built for one purpose: enjoyment. Not networking, not matching, not swiping — just people, coming together in a room, playing something, and enjoying the conversation that follows.
+          </p>
+        </div>
+      )}
     </>
   );
 };
