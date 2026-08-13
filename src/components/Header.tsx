@@ -7,6 +7,11 @@ const Header: React.FC = () => {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAboutHovered, setIsAboutHovered] = useState(false);
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    setCursorPos({ x: e.clientX, y: e.clientY });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,12 +35,20 @@ const Header: React.FC = () => {
       <nav className="desktop-only" style={styles.nav}>
         <div 
           style={styles.navItemContainer}
-          onMouseEnter={() => setIsAboutHovered(true)}
+          onMouseEnter={(e) => {
+            setIsAboutHovered(true);
+            setCursorPos({ x: e.clientX, y: e.clientY });
+          }}
           onMouseLeave={() => setIsAboutHovered(false)}
+          onMouseMove={handleMouseMove}
         >
           <a href="#about" style={styles.link}>About us</a>
           {isAboutHovered && (
-            <div className="brutal-card" style={styles.captionBox}>
+            <div style={{
+              ...styles.captionBox,
+              left: `${cursorPos.x + 24}px`,
+              top: `${cursorPos.y + 24}px`,
+            }}>
               <p style={styles.captionText}>
                 DOLOG was built for one purpose: enjoyment. Not networking, not matching, not swiping — just people, coming together in a room, playing something, and enjoying the conversation that follows.
               </p>
@@ -45,7 +58,7 @@ const Header: React.FC = () => {
               <p style={styles.captionText}>
                 That's the thing about a room full of strangers: you never really know who's in it. Could be someone across the city. Could be someone from your own college. Could be the neighbor you've walked past a hundred times and never once said hello to.
               </p>
-              <p style={styles.captionText}>
+              <p style={{ ...styles.captionText, marginBottom: 0 }}>
                 DOLOG is that room. Come play, come talk, come find out.
               </p>
             </div>
@@ -142,16 +155,17 @@ const styles = {
     position: 'relative' as const,
   },
   captionBox: {
-    position: 'absolute' as const,
-    top: '100%',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    marginTop: '16px',
-    width: '400px',
+    position: 'fixed' as const,
+    width: '380px',
     padding: '24px',
     zIndex: 1100,
-    backgroundColor: 'var(--bg-color)',
+    backgroundColor: '#fff',
+    border: '3px solid var(--black)',
+    borderRadius: '16px',
+    borderBottomLeftRadius: '0px',
+    boxShadow: '6px 6px 0px var(--black)',
     cursor: 'default',
+    pointerEvents: 'none' as const,
   },
   captionText: {
     fontFamily: 'var(--font-body)',
